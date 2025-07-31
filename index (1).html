@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>КЛАН КАБІНА</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #2a2a2a, #0d0d0d);
+    background-size: 400% 400%;
+    animation: backgroundMove 15s ease infinite;
+    color: #fff;
+  }
+
+  @keyframes backgroundMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .glow-box {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 2px solid #00f7ff33;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #00f7ff66;
+    backdrop-filter: blur(10px);
+    transition: 0.4s;
+  }
+
+  .glow-box:hover {
+    box-shadow: 0 0 40px #00f7ffaa;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 3.5em;
+    background: linear-gradient(to right, #00f7ff, #ff00e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textGlow 3s infinite ease-in-out;
+  }
+
+  @keyframes textGlow {
+    0% { text-shadow: 0 0 10px #0ff; }
+    50% { text-shadow: 0 0 25px #ff00e0; }
+    100% { text-shadow: 0 0 10px #0ff; }
+  }
+
+  .section {
+    margin-top: 40px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 6px solid #00ffd5;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #00ffd533;
+  }
+
+  .section h2 {
+    font-size: 2em;
+    color: #00ffd5;
+    margin-bottom: 10px;
+  }
+
+  .section p {
+    font-size: 1.3em;
+    color: #ddd;
+    line-height: 1.6;
+  }
+
+  .btn-container {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .btn-neon {
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #00f7ff, #00ff85);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 0 20px #00f7ff;
+    transition: all 0.3s ease;
+  }
+
+  .btn-neon:hover {
+    box-shadow: 0 0 40px #00ffcc, 0 0 60px #00ffcc;
+    transform: scale(1.05);
+  }
+
+  .btn-discord {
+    background: linear-gradient(45deg, #7289da, #99aaff);
+    box-shadow: 0 0 20px #7289da;
+  }
+
+  .btn-discord:hover {
+    box-shadow: 0 0 40px #99aaff, 0 0 60px #7289da;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="glow-box">
+    <h1>КЛАН КАБІНА</h1>
+    <div class="section">
+      <h2>🔰 Про нас</h2>
+      <p>Ми — КЛАН КАБІНА, серце Еліти РП, володіємо Дніпровським Картелем! Вступай, поки не пізно!</p>
+    </div>
+  </div>
+
+  <div class="glow-box">
+    <h1>Базова Інформація</h1>
+    <div class="btn-container">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe55IAoy9WsD_RwO7VJAAlQcrGUVDr5Pp-rbnfnNlpFWVSojw/viewform?usp=header" class="btn-neon">✅ Вступ у клан</a>
+      <a href="https://sites.google.com/view/kabinafamq/інформація" class="btn-neon">ℹ️ Інформація</a>
+      <a href="https://discord.gg/yourlink" class="btn-neon btn-discord" target="_blank">💬 Приєднатися в Discord</a>
+    </div>
+  </div>
+
+</body>
+</html>
